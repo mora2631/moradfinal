@@ -1,0 +1,197 @@
+/* CSS added to make the top header flush with top and sides of the webpage */
+html, body {
+    margin:0;
+    padding:0;  
+}
+
+*{
+    font-family: 'Nunito', serif;
+}
+
+header{
+    background-color:  #4B9CD3;
+    height: 22vh;
+}
+
+.headimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer{
+    background-color:  #4B9CD3;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .8rem;
+    text-align: center;
+}
+
+
+.navbar {
+    position: relative;
+    background-color: #FF7E47;
+    border-radius: 0 0 50% 50%;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    display: inline-block;
+}
+
+.navlink{
+    display: block;
+    font-size: 20;
+    color: black;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+    border-radius: 0 0 25% 25%;
+}
+
+.navlink:hover {
+    background-color: #FFB899;
+}  
+
+.wings{
+    position: absolute;
+    width: 100%;
+}
+
+.maintext{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.divider{
+    height: 30vw;
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.cardText {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.btn {
+    background-color: #FF7E47;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FFB899;
+}
+
+.formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    flex: 1 1 100%;
+    max-width: 400px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+.Contacttext {
+    flex: 1 1 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* On screens that are 800px or larger */
+@media screen and (min-width: 900px) {
+    .maintext{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .card {
+        margin-left: 200px;
+        margin-right: 200px;
+        flex-direction: row;
+    }
+
+    .cardImgLider {
+        width: 25%;
+    }
+
+    .form-container {
+        flex-wrap: nowrap;
+    }
+    
+    form {
+        flex: 1 1 50%;
+        margin: 0;
+        padding-left: 200px;
+    }
+    
+    .form-text {
+        flex: 1 1 50%;
+        margin-top: 0;
+        text-align: left;
+    }
+
+}
